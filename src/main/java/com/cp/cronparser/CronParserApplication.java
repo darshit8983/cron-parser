@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Arrays;
 
+/**
+ * Class used to boot up spring application.
+ */
 @SpringBootApplication
 public class CronParserApplication {
 

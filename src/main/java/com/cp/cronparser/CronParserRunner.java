@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This class is responsible to parse the Cron job provided as the application arguments.
+ */
 @Component
 @Profile("!test")
 public class CronParserRunner implements CommandLineRunner {
@@ -26,6 +29,11 @@ public class CronParserRunner implements CommandLineRunner {
             ParserType.DAY_OF_WEEK
     );
 
+    /**
+     * Overridden method which get triggered once the application comes up.
+     * @param args The args passed to the main class as arguments.
+     * @throws Exception
+     */
     @Override
     public void run(String... args) throws Exception {
 

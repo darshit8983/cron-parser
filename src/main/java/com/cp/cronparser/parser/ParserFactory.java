@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import static com.cp.cronparser.dto.ParserType.*;
 
+/**
+ * Factory class for parsers.
+ */
 @Component
 public class ParserFactory {
 
@@ -25,6 +28,11 @@ public class ParserFactory {
         this.monthParser = monthParser;
     }
 
+    /**
+     * Provides the parser object based on the input provided.
+     * @param type class of {@link ParserType}
+     * @return implementation of {@link  AbstractParser} based on {@link ParserType} provided.
+     */
     public AbstractParser getParser(ParserType type) {
         switch (type) {
             case MINUTE:
