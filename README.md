@@ -6,7 +6,7 @@ Cron parser is written in java with spring boot 3.2.3. Spring boot 3.2.3 require
 and maven 3.6.3 version
 
 ### Building the script
-Cron parser requires minimum of javaa 17 & maven 3.6.3 to build.
+Cron parser requires minimum of java 17 & maven 3.6.3 to build.
 
 From the project root, do `mvn clean install` :
 ```bash
